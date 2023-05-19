@@ -2,13 +2,16 @@
 <html>
 <head>
     <title>Credit Card Fraud Detection</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
 </head>
 <body>
-    <h1>Credit Card Fraud Detection</h1>
-    <form action="/detect" method="post" enctype="multipart/form-data">
-        <label for="csv_file">Upload CSV file:</label>
-        <input type="file" name="csv_file" id="csv_file" required>
-        <input type="submit" value="Detect">
-    </form>
+    <div class="container">
+        <h1>Credit Card Fraud Detection</h1>
+        <form action="/detect" method="post" enctype="multipart/form-data">
+            <label for="csv_file">Upload CSV file:</label>
+            <input type="file" name="csv_file" id="csv_file" required>
+            <input type="submit" value="Detect">
+        </form>
+    </div>
 </body>
 </html>

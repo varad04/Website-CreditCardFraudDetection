@@ -2,10 +2,73 @@
 <html>
 <head>
     <title>Result</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        table {
+            border-collapse: collapse;
+            margin: 20px auto;
+        }
+
+        th, td {
+            padding: 10px;
+            text-align: center;
+            border: 1px solid #ccc;
+        }
+    </style>
 </head>
 <body>
     <h1>Result</h1>
-    <h2>Logistic Regression Accuracy: {{ lr_accuracy }}</h2>
-    <h2>Random Forest Accuracy: {{ rf_accuracy }}</h2>
+    <table>
+        <tr>
+            <th>Model</th>
+            <th>Accuracy</th>
+            <th>Precision</th>
+            <th>Recall</th>
+            <th>F1-Score</th>
+        </tr>
+        <tr>
+            <td>Logistic Regression</td>
+            <td>{{ lr_accuracy }}</td>
+            <td>{{ lr_precision }}</td>
+            <td>{{ lr_recall }}</td>
+            <td>{{ lr_f1_score }}</td>
+        </tr>
+        <tr>
+            <td>Random Forest</td>
+            <td>{{ rf_accuracy }}</td>
+            <td>{{ rf_precision }}</td>
+            <td>{{ rf_recall }}</td>
+            <td>{{ rf_f1_score }}</td>
+        </tr>
+        <tr>
+            <td>SVM</td>
+            <td>{{ svm_accuracy }}</td>
+            <td>{{ svm_precision }}</td>
+            <td>{{ svm_recall }}</td>
+            <td>{{ svm_f1_score }}</td>
+        </tr>
+        <tr>
+            <td>Decision Tree</td>
+            <td>{{ dt_accuracy }}</td>
+            <td>{{ dt_precision }}</td>
+            <td>{{ dt_recall }}</td>
+            <td>{{ dt_f1_score }}</td>
+        </tr>
+        <tr>
+            <td>KNN</td>
+            <td>{{ knn_accuracy }}</td>
+            <td>{{ knn_precision }}</td>
+            <td>{{ knn_recall }}</td>
+            <td>{{ knn_f1_score }}</td>
+        </tr>
+    </table>
 </body>
 </html>
