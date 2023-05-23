@@ -1,3 +1,3 @@
 # Website-CreditCardFraudDetection
 
-Using HTML,CSS and Flask to create this wesite.
+Using Python,HTML,CSS and Flask to create this wesite.
